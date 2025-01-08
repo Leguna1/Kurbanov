@@ -34,12 +34,17 @@ const articles = [
     },
     {
         title: "Hello Unreal",
-        text: "This was my first Unreal Engine project ever, everything was so new and I was completely lost but we had learn it quickly and create a local multiplayer game within 4 weeks time. My game idea was inspired by Sorceress's Garden from Runescape, a mini-game where the player has to sneak in to a garden and steal fruits without using any abilities against guards armed with magic powers. The player wouldnt take any damage but gets teleported out of the garden if he gets hit by a missile, to make it more competitive players would have to collect most gems along the way while trying to avoid sight-line of guards and looking for the big gems. In this project I spent a good deal of time being lost and trying out everything I could think of but managed with basic locomotion, projectiles and scoring system in the end and learned little about animations, materials and niagara system.",
+        text: "This was my first Unreal Engine project ever, everything was so new and I was completely lost but we had to learn it quickly and create a local multiplayer game within 4 weeks time. My game idea was inspired by Sorceress's Garden from Runescape, a mini-game where the player has to sneak in to a garden and steal fruits without using any abilities against guards armed with magic powers. The player wouldnt take any damage but gets teleported out of the garden if he gets hit by a missile, to make it more competitive players would have to collect most gems along the way while trying to avoid sight-line of guards and looking for the big gems. In this project I spent a good deal of time being lost and trying out everything I could think of but managed with basic locomotion, projectiles and scoring system in the end and learned little about animations, materials and niagara system and some more.",
         images: [
             "GuardianGardenBackground.png",
             "GuardianGarden.png",
 			"GuardianGarden2.png",
         ]
+		title: "OpenGL",
+		text: "This is my first real C++ project, the purpose of this 3 weeks long project was to learn C++ and know how game engines are made under the hood by doing it myself from scratch with OpenGL. The program has classes with single responsiblity, one storage class for vertices and indices data, one class take the data and binds them together and applies transform and colors etc. Most challenging part during this project was setting up was all the errors and debugging each step over and over again but I learned alot and wanted work with C++ more in the future mostly because doing things from scratch means the result will be the way I want it and I learn during each step of the process."
+		images: [
+		"openGL.png",
+		"openGLmain.png",
     }
 ]
   function calculateCircularOffset(index, currentCardIndex, cardCount) {
