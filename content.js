@@ -40,13 +40,16 @@ const articles = [
             "GuardianGarden.png",
 			"GuardianGarden2.png",
         ]
+		
+    }
+	{
 		title: "OpenGL",
 		text: "This is my first real C++ project, the purpose of this 3 weeks long project was to learn C++ and know how game engines are made under the hood by doing it myself from scratch with OpenGL. The program has classes with single responsiblity, one storage class for vertices and indices data, one class take the data and binds them together and applies transform and colors etc. Most challenging part during this project was setting up was all the errors and debugging each step over and over again but I learned alot and wanted work with C++ more in the future mostly because doing things from scratch means the result will be the way I want it and I learn during each step of the process."
 		images: [
 		"openGL.png",
 		"openGLmain.png",
 		]
-    }
+	},
 ]
   function calculateCircularOffset(index, currentCardIndex, cardCount) {
     const radius = 300; // Radius of the circular carousel
