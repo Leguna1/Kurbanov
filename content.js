@@ -12,7 +12,7 @@ let isModalOpen = false; // Flag to track modal state
 const articles = [
     {
         title: "Project X",
-        text: "This is my 8-weeks long examination project, done in Unreal Engine 5 with Blueprint only. First 3-4 weeks I focused on creating damage system, projectiles, enemy AIs and different attacks. Then next two weeks I learned about level design and widgets, targeting logic, re-created the attacks for the player only with cooldowns, stats component with attack power, defence power and leveling which was used for both player and AI. Last two weeks I mainly focused on animations, vfx and sounds and population of enemies and in the end I added a spellbook. This project was bigger than I imagined and I knew my aim was too big but I tried do as much as possible. I wanted to include inventory system too but failed to complete it but still I gained alot confidence and level-design, animations, widgets and creating different component systems are now less intimidating.",
+        text: "This is my 8-weeks long examination project, done in Unreal Engine 5 with Blueprint only. First 3-4 weeks I focused on creating damage system, projectiles, enemy AIs and different attacks. Then next two weeks I learned about level design and widgets, targeting logic, re-created the attacks for the player only with cooldowns, stats component with attack power, defence power and leveling which was used for both player and AI. Last two weeks I mainly focused on animations, vfx and sounds and population of enemies and in the end I added a spellbook and a simple mini-map. This project was bigger than I imagined and I knew my aim was too big but I tried do as much as possible. I tried to include inventory system too but failed to complete it but still I gained alot confidence and level-design, animations, widgets and creating different component systems are now less intimidating.",
         images: [
             "ProjectX1.1.png",
             "BarbarianKingLightingTrail.png",
@@ -22,20 +22,23 @@ const articles = [
         ]
     },
     {
-        title: "Article Title 2",
-        text: "This is example article text for article 2. Some other text here, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        title: "UE5 Project #2",
+        text: "This was a 4 weeks long 2 man project, and my second attempt to create an action-rpg game in Unreal with Blueprints. First couple of weeks I learned about behavior trees, interfaces, enums and structs to create a simple enemy AI with sight, hearing and damage senses. All they did was chase and fight the player. I also tried to learn about quest system and managed to implement a simple quest system with location, kill, interaction objectives. I also created a very simple ability system with stealth, healing and attack abilities and the challenges I had here was ability system with cooldowns effects and sounds but I learned about materials and niagara system. The game loop was about 5 min long, player would accept a quest and fight the enemies with magic bolt, stealth and healing then fight the boss in the end to win.",
         images: [
-            "image1.jpg",
-            "image2.jpg",
-            "image3.jpg"
+            "ShaolinTemple.png",
+            "TheFirstQuest.png",
+			"EnemyMinions.png",
+			"MysticPortal.png",
+			"AICoreBT.png",
         ]
     },
     {
-        title: "Article Title 3",
-        text: "This is example article text for article 3. Some other text here, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        title: "Hello Unreal",
+        text: "This was my first Unreal Engine project ever, everything was so new and I was completely lost but we had learn it quickly and create a local multiplayer game within 4 weeks time. My game idea was inspired by Sorceress's Garden from Runescape, a mini-game where the player has to sneak in to a garden and steal fruits without using any abilities against guards armed with magic powers. The player wouldnt take any damage but gets teleported out of the garden if he gets hit by a missile, to make it more competitive players would have to collect most gems along the way while trying to avoid sight-line of guards and looking for the big gems. In this project I spent a good deal of time being lost and trying out everything I could think of but managed with basic locomotion, projectiles and scoring system in the end and learned little about animations, materials and niagara system.",
         images: [
-            "image4.jpg",
-            "image5.jpg",
+            "GuardianGardenBackground.png",
+            "GuardianGarden.png",
+			"GuardianGarden2.png",
         ]
     }
 ]
