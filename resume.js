@@ -89,16 +89,20 @@ const educationData =
 ];
 
 const skillsData = [
-  "Proficient in Java, Python, and JavaScript",
-  "Experience with web development frameworks like React and Angular",
-  "Database management with MySQL and MongoDB",
-  "Strong problem-solving and debugging skills"
+  "Unity (C#), Unreal (Blueprints, C++)",
+  "Agile Development",
+  "Object-Oriennted Programming",
+  "Gameplay Systems, AI/Combat Design",
+  "Optimization, Version Control (Git)",
+  "Problem-solving and debugging",
+  "Good Communication & People-skills"
 ];
 
 const interestsData = [
-  "Open-source software development",
-  "AI and Machine Learning",
-  "Traveling and photography"
+  "Gaming, Fantasy Novels",
+  "AI and Gameplay Systems",
+  "Philosophy, psychology",
+  "Anime, Movies"
 ];
 
 // Dynamically populate the sections with data from arrays
