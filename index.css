@@ -1,0 +1,123 @@
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.3), rgba(255, 255, 255, 0.7));
+    opacity: 0.7;
+    perspective: 1000px;
+    z-index: -10;
+    background-image: url('./backgroundImages/background.jpg'); /* Added background image */
+    background-size: cover;
+    background-position: center;
+}
+.snowflake {
+    position: absolute;
+    background: white; /* Snow color */
+    border-radius: 50%; /* Circle shape */
+    top: -20px;
+    pointer-events: none; /* Ignore mouse events */
+    z-index: -9; /* Snow in front of background */
+    animation-name: fall;
+    animation-timing-function: linear;
+}
+.main-vertical-layout {
+    position: absolute; /* Absolute within body */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    background-color: black;
+    opacity: 1;
+    border: 0px solid #333;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    z-index: -8;
+}
+.header-horizontal-layout {
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    position: relative; /* To contain the logo and title */
+	z-index: -7;
+}
+.logo-container {
+    height: 95%;
+    width: 10%;
+	margin: 10px;
+    background-color: transparent;
+    border: 0px solid #666;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    background-image: url('./backgroundImages/ninja.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+	z-index: -6:
+}
+.title-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6em;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px #000; /* Black outline */
+    background-image: linear-gradient(to right, blue, black);
+    -webkit-background-clip: text;
+    text-shadow: 3px 3px 5px white;
+    white-space: nowrap; /* Prevent text from wrapping */
+	z-index: -5
+}
+.button-container {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Align the buttons vertically */
+    background-color: transparent;
+    opacity: 1.0;
+    padding: 0px; /* Optional: Add padding for spacing around content */
+    margin: 10px 25px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -4;
+}
+
+.my-button,.my-button2, .my-button3
+{
+    width: 100px;
+	height; 50px;
+    background-color: white;
+    opacity: 1;
+    color: white;
+    -webkit-text-stroke: 0.5px white;
+    background-image: linear-gradient(to bottom, #000, #111);
+    -webkit-background-clip: text;
+    transition: opacity 0.3s ease;
+	
+    font-size: 1.2em;
+    text-align: center;
+    z-index: -3;
+    margin: 0 5px; /* Add horizontal spacing between buttons */
+}
+.content-iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove default iframe border */
+}
+.my-button:hover, my-button2:hover, my-button3:hover
+{
+	
+    opacity: 1.0;
+}
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}

@@ -1,0 +1,278 @@
+.content-vertical-layout {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 1;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+	
+}
+
+.child-container-1, .child-container-2, .child-container-3 {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+	z-axiss: 1
+
+}
+
+.child-container-1 {
+    height: 10%;
+   
+}
+
+.child-container-2 {
+    height: 40%;
+    perspective: 1000px;
+    overflow: hidden; /* Hide overflowing cards*/
+}
+
+.child-container-3 {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+	width: 90%;
+    
+}
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid silver;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: relative; /* To enable absolute positioning of cards inside*/
+    transform-style: preserve-3d; /* to get 3d space for all elements */
+    justify-content: center;
+}
+
+
+.article-title {
+    color: white;
+    font-size: 4em;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    position: relative;
+    z-index: 2;
+    white-space: nowrap; /* Prevent text from wrapping */
+	
+	
+}
+
+.article-text {
+    width: 100%;
+	color: white;
+	
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 10px;
+    overflow: auto;
+    box-sizing: border-box;
+    font-size: 2em;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+
+.left-button-container,
+.right-button-container {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 3;
+}
+
+.left-button-container {
+    left: 20px;
+    bottom: 20px;
+}
+.right-button-container {
+    right: 20px;
+    bottom: 20px;
+}
+.article-button {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+     font-size: 2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 4;
+}
+ .article-button:hover {
+       background-color: rgba(0, 0, 0, 0.8);
+ }
+  .article-button:active {
+      background-color: rgba(0, 0, 0, 0.9);
+   }
+   
+  .carousel-card
+  {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 1.0);
+    transform: translate(-50%, -50%) translateZ(0); /* Added translate for correct center */
+    opacity: 1;
+    border: 0px solid #333; /* Outlines */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); /* Shadow */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+	z-index: 5;
+  }
+    .carousel-card img 
+	{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) translateZ(0); /* Added translate for correct center */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+	
+.carousel-button 
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+     transition: background-color 0.3s ease;
+       width: 10%;
+    height: 100px;
+}
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 1.0);
+}
+
+.prev-carousel-button {
+  left: 0;
+}
+
+.next-carousel-button {
+  right: 0;
+}
+/* Additional style for the main button */
+.header-horizontal-layout .button-container {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+        padding: 0px;
+    margin: 0px;
+	
+
+}
+
+.header-horizontal-layout .my-button {
+    font-size: 14px;
+    color: black;
+    border: 1px solid #333;
+	
+    background-image: none;
+        -webkit-text-stroke: none;
+}
+
+.header-horizontal-layout .my-button:hover {
+     background-color: green;
+    color: white;
+}
+.modal 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal-content 
+{
+	
+    position: relative;
+    text-align: center;
+	
+}
+
+.modal-image 
+{
+	width: 90%; /* Increased the size */
+    height: 90%; /* Adjust for larger images */
+    opacity: 1.0;
+	position: fixed;
+	
+	transform: translate(-50%, -50%);
+}
+
+.modal-close, .modal-prev, .modal-next 
+{
+    position: fixed;
+    background: none;
+    border: 2px;
+    color: white;
+    font-size: 3rem; /* Reduced to avoid overlap */
+    cursor: pointer;
+	z-index: 11;
+}
+
+.modal-close {
+    top: 9px; /* Adjusted spacing from the top */
+    right: 70px; /* Spaced from the right */
+    font-size: 4rem; /* Larger close button */
+	
+}
+
+.modal-prev 
+{
+	
+    left: 5%; /* Moved closer to the edges */
+    bottom: 50%;
+    transform: translateY(50%); /* Center vertically */
+    
+}
+
+.modal-next 
+{
+    right: 5%; /* Moved closer to the edges */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+	
+}
