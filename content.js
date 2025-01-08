@@ -45,6 +45,7 @@ const articles = [
 		images: [
 		"openGL.png",
 		"openGLmain.png",
+		]
     }
 ]
   function calculateCircularOffset(index, currentCardIndex, cardCount) {
