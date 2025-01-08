@@ -11,14 +11,14 @@ let autoSwitchInterval;
 let isModalOpen = false; // Flag to track modal state
 const articles = [
     {
-        title: "Article Title 1",
-        text: "This is example article text for article 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+        title: "Project X",
+        text: "This is my 8-weeks long examination project, done in Unreal Engine 5 with Blueprint only. First 3-4 weeks I focused on creating damage system, projectiles, enemy AIs and different attacks. Then next two weeks I learned about level design and widgets, targeting logic, re-created the attacks for the player only with cooldowns. Last two weeks I mainly focused on animations, vfx and sounds and population of enemies and in the end I added a spellbook. This project was bigger than I imagined and I knew my aim was too big but I tried do as much as possible. I wanted to include inventory system too but failed to complete it but still I gained alot confidence and level-design, animations, widgets and creating different component systems are now less intimidating.",
         images: [
-            "image1.jpg",
-            "image2.jpg",
-            "image3.jpg",
-            "image4.jpg",
-            "image5.jpg",
+            "ProjectX1.1.png",
+            "BarbarianKingLightingTrail.png",
+            "MeleeEnemyBT.png",
+            "ArcherEnemyBT.png",
+            "BarbarianKingBT.png",
         ]
     },
     {
