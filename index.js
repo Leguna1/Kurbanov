@@ -7,7 +7,7 @@ resumeButton.addEventListener('click', () => {
 });
 resumeButton.addEventListener('click', () => {
     // Open the resume page in a new tab
-    window.open('resume.html', '_blank');
+    window.open('resumee.html', '_blank');
 });
 function createSnowFlake() {
     const snowflake = document.createElement('div');
